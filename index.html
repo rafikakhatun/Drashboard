@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--drashboard Container-->
+    <div class="bg-black font-serif text-green-800 w-11/12 mx-auto h-auto ">
+
+        <!--Drashboard content-->
+        <div class="w-11/12 text-white mx-auto overflow-auto">
+
+            <h1 class="text-4xl text-yellow-300 font-bold lg:mt-8 mt-8 lg:ml-0 ml-3 ">Employee Dashboard</h1>
+            <p class="lg:mt-3 mt-3 lg:ml-2 ml-9">Manage and analyze employee data efficiently</p>
+            <!--card section-->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 mt-10">
+                <!--card 1-->
+                <div
+                    class="px-6 py-12 rounded-2xl  font-semibold text-sm bg-gradient-to-r from-blue-500 to-purple-500 flex justify-between   hover:shadow-lg transition-all transform hover:scale-105 ">
+
+                    <div class="mt-6 mr-4">
+                        <p>TOTAL EMPLOYEES</p>
+                        <P>20</P>
+                    </div>
+                    <div class="mt-5">
+                        <i
+                            class="fa-solid fa-users  text-blue-600 bg-blue-300 flex justify-center items-center text-xl   w-12 h-12 rounded-full "></i>
+                    </div>
+
+                </div>
+                <!--card 2-->
+                <div
+                    class="p-6 py-12 rounded-2xl shadow-lg  font-semibold text-sm bg-gradient-to-r from-pink-500 to-orange-500 flex justify-between   hover:shadow-lg transition-all transform hover:scale-105">
+                    <div class="mt-6">
+                        <p>TOTAL SALARY</p>
+                        <p>$1,178,000</p>
+                    </div>
+                    <div class="mt-5">
+                        <i
+                            class="fa-solid fa-dollar-sign text-pink-700  bg-pink-300 text-xl flex justify-center items-center  w-12 h-12 rounded-full"></i>
+                    </div>
+
+                </div>
+                <!--card 3-->
+                <div
+                    class="p-6 py-12 rounded-2xl shadow-sm font-semibold text-sm bg-gradient-to-r from-green-500 to-teal-500 flex justify-between   hover:shadow-lg transition-all transform hover:scale-105">
+                    <div class="mt-6">
+                        <p>AVERAGE SALARY</p>
+                        <p>$58,900</p>
+                    </div>
+                    <div class="mt-5">
+                        <i
+                            class="fa-solid fa-chart-line text-green-800 bg-green-300 flex justify-center items-center text-xl  w-12 h-12 rounded-full"></i>
+                    </div>
+                </div>
+                <!--card 4-->
+                <div
+                    class="p-6 py-12 rounded-2xl shadow-lg  font-semibold text-sm bg-gradient-to-r from-yellow-500 to-violet-500 flex justify-between   hover:shadow-lg transition-all transform hover:scale-110">
+                    <div class="mt-6">
+                        <P>MOST EXPERIENCED</P>
+                        <P>Esthan Allen(7 yrs)</P>
+                    </div>
+                    <div class="mt-5">
+                        <i
+                            class="fa-solid fa-user-tie text-violet-800 bg-yellow-100 flex justify-center items-center text-xl  w-12 h-12 rounded-full"></i>
+                    </div>
+
+                </div>
+            </div>
+            <!--Employee input field-->
+            <div
+                class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 py-10 px-4 mt-6 space-x-4  rounded-xl  bg-gradient-to-br from-blue-500 to-violet-600">
+                <!-- all Disignner field-->
+                <div class="flex flex-col space-y-2 ">
+                    <label class="text-lg " for="">Filter by Disignation</label>
+                    <select class="p-3 rounded-lg text-violet-600 bg-white  border-blue-950 " name="" id="Designation">
+
+                        <option value="All Designation">All Designation</option>
+                        <option value="Software Engineer">Software Engineeer</option>
+                        <option value="HR Manager">HR Manager</option>
+                        <option value="Graphic Designer">Graphic Designer</option>
+                        <option value="Marketing Executive">Marketing Executive</option>
+                        <option value="Software Developer">Software Developer</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Network Engineer">Network Engineer</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="System Administrator">System Administrator</option>
+                        <option value="UX/UI Designer">UX/UI Designer</option>
+                        <option value="Software Tester">Software Tester</option>
+                        <option value="Content Writer">Content Writer</option>
+                        <option value="SEO Specialist">SEO Specialist</option>
+                        <option value="Database Administrator">Database Administrator</option>
+                        <option value="Cyber Security Expert">Cyber Security Expert</option>
+                        <option value="Cloud Engineer">Cloud Engineer</option>
+                        <option value="AI Engineer">AI Engineer</option>
+                        <option value="Blockchain Developer">Blockchain Developer</option>
+                        <option value="Game Developer">Game Developer</option>
+                        <option value="IT Support Specialist">IT Suppot Specialist</option>
+
+
+                    </select>
+
+
+
+                </div>
+
+                <!--sort by field-->
+
+                <div class="flex flex-col space-y-2  mt-1">
+                    <label for="">Sort by</label>
+                    <select class="p-3  lg:mr-0 mr-8 rounded-lg text-violet-600 bg-white  border-blue-950 " name="" id="sortBy">
+                        <option class="mt-4" value="id">ID</option>
+                        <option value="name">NAME</option>
+                        <option value="salary-low">SALARY(high to low)</option>
+                        <option value="salary-high">SALARY(low to high)</option>
+                        <option value="experience-low">Experience(high to low)</option>
+                        <option value="experience-high">Experience(low to high)</option>
+
+
+                    </select>
+                </div>
+
+                <!--search by name-->
+                <div class="flex flex-col space-y-2 ">
+                    <label for="">Search</label>
+                    <input id="searchInput"
+                        class="p-3 lg:mr-0 mr-8 rounded-lg text-violet-800 border-blue-950 placeholder:text-violet-600" type="text"
+                        placeholder="Search by name">
+                </div>
+
+            </div>
+
+
+            <!--Employee table section-->
+            <div class="h-auto bg-gradient-to-br from-blue-500 to-violet-600 mt-8 rounded-md">
+                <table class="w-full table-fixed text-sm">
+
+                    <!--table header-->
+
+                    <thead>
+                        <tr class="border-b bg-white text-blue-500 border-blue-500">
+                            <th class="p-3 w-1/3 text-left">ID</th>
+                            <th class="p-3 w-1/3 text-left">NAME</th>
+                            <th class="p-3 w-1/3 text-left">DESIGNATION</th>
+                            <th class="p-3 w-1/3 text-left">SALARY</th>
+                            <th class="p-3 w-1/3 text-left">EXPERIENCE YEARRS</th>
+
+                        </tr>
+                    </thead>
+
+                    <!--table body-->
+
+                    <tbody id="employeeTableBody"></tbody>
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--employee table end section-->
+            </div>
+
+
+
+
+            <!--content end div-->
+        </div>
+        <!--container end div-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
