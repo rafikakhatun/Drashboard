@@ -32,8 +32,7 @@ A sleek and responsive Employee Management Dashboard built using **HTML**, **Tai
 ## 📸 Screenshots
 
 <!-- Replace with your actual image link -->
-![Dashboard Preview](https://user-images.githubusercontent.com/your-image-url/employee-dashboard.png)
-
+![Employee Dashboard Preview](./assets/ReadmeScreenshot.png)
 ---
 
 ## 🛠️ Getting Started
