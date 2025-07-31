@@ -1,5 +1,5 @@
 
-//step 1
+
 
 const employees = [
   {
